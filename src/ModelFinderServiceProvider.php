@@ -10,7 +10,7 @@ class ModelFinderServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        $this->app->singleton(Inspector::class, function () {
+        $this->app->bind(Inspector::class, function () {
             return new Inspector(new Finder);
         });
     }
