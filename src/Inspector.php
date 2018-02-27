@@ -15,9 +15,20 @@ class Inspector
 
     public function locate()
     {
-        $files = $this->finder->files()->in(base_path('app'))->name("*.php");
+        $files = $this->getAllFilesInThePath();
 
+        $classes = $this->getAllClassesDeclared($files);
 
+        return $this->filterAndGetTheModels($classes);
+    }
+
+    public function getAllFilesInThePath()
+    {
+        return $this->finder->files()->in(config('model.path'))->name("*.php");
+    }
+
+    public function getAllClassesDeclared($files)
+    {
         ob_start();
 
             collect($files)->each(function ($file) {
@@ -28,12 +39,14 @@ class Inspector
             });
         ob_end_clean();
 
-        $classes = collect(get_declared_classes());
+        return collect(get_declared_classes());
+    }
 
+    public function filterAndGetTheModels($classes)
+    {
         return $classes->map(function ($class) {
             return new ReflectionClass($class);
         })
-
         ->reject(function ($class) {
             if (starts_with($class->getNamespaceName(), 'Illuminate')) {
                 return true;

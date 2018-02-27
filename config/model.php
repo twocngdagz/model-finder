@@ -1,9 +1,7 @@
 <?php
 
 return [
-    'path' => [
-        base_path('app')
-    ],
+    'path' => base_path('app'),
 
     'namespaces' => [
         'Illuminate'
