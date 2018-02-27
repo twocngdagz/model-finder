@@ -3,6 +3,7 @@
 namespace Prototype\ModelFinder;
 
 use Symfony\Component\Finder\Finder;
+use ReflectionClass;
 
 class Inspector
 {

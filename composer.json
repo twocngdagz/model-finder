@@ -1,5 +1,5 @@
 {
-    "name": "twocngdagz/modelfinder",
+    "name": "twocngdagz/model-finder",
     "description": "List all models in laravel project",
     "keywords": ["laravel", "model"],
     "type": "library",

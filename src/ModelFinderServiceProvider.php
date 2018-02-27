@@ -3,6 +3,7 @@
 namespace Prototype\ModelFinder;
 
 use Illuminate\Support\ServiceProvider;
+use Prototype\ModelFinder\Inspector;
 use Symfony\Component\Finder\Finder;
 
 class ModelFinderServiceProvider extends ServiceProvider
