@@ -1,0 +1,36 @@
+{
+    "name": "twocngdagz/ModelFinder",
+    "description": "List all models in laravel project",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mederic Roy Beldia",
+            "email": "twocngdagz@yahoo.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "symfony/finder": "~3.3|~4.0",
+        "illuminate/support": "~5.5.0|~5.6.0"
+    },
+    "require-dev": {
+        "laravel/browser-kit-testing": "~2.0",
+        "laravel/dusk": "~2.0|~3.0",
+        "orchestra/testbench": "~3.5",
+        "phpunit/phpunit": "6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Prototype\\ModelFinder\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Prototype\\ModelFinder\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
+}
