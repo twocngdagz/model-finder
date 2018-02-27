@@ -1,11 +1,11 @@
 <?php
 
-namespace Prototype\ModelFinder;
+namespace Prototype\ModelFinder\Facades;
 
 use Illuminate\Support\Facades\Facade;
 use Prototype\ModelFinder\Inspector;
 
-class Inspector extends Facade
+class Model extends Facade
 {
     /**
      * Get the registered name of the component.
