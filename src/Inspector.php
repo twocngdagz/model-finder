@@ -2,8 +2,9 @@
 
 namespace Prototype\ModelFinder;
 
-use Symfony\Component\Finder\Finder;
+use Illuminate\Database\Eloquent\Model;
 use ReflectionClass;
+use Symfony\Component\Finder\Finder;
 
 class Inspector
 {
