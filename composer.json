@@ -1,6 +1,7 @@
 {
     "name": "twocngdagz/ModelFinder",
     "description": "List all models in laravel project",
+    "keywords": ["laravel", "model"],
     "type": "library",
     "license": "MIT",
     "authors": [
