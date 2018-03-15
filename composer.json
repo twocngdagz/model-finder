@@ -7,7 +7,8 @@
     "authors": [
         {
             "name": "Mederic Roy Beldia",
-            "email": "twocngdagz@yahoo.com"
+            "email": "twocngdagz@yahoo.com",
+            "homepage": "https://medericroybeldia.co"
         }
     ],
     "require": {
@@ -33,5 +34,15 @@
     },
     "scripts": {
         "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Prototype\\ModelFinder\\ModelFinderServiceProvider"
+            ]
+        }
     }
 }
